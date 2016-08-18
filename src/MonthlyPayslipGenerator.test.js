@@ -15,21 +15,20 @@ const testCases = [{
 describe("MonthlyPayslipGenerator", () => {
   const MonthlyPayslipGenerator = require('./MonthlyPayslipGenerator');
 
-  it("should throw unless instantiated with a valid record", () => {
+  it("should throw unless instantiated with a record.", () => {
     assert.throws(() => {
       new MonthlyPayslipGenerator();
     });
   });
 
-  it("should accept valid records", () => {
+  it("should accept valid records.", () => {
     testCases.forEach((testCase) => {
       new MonthlyPayslipGenerator(testCase.in);
     });
   });
 
-  it("should correctly calculate payslips", () => {
+  it("should correctly calculate payslips using FY2013 tax rates.", () => {
     testCases.forEach((testCase) => {
-      // Use the 2013 Tax brackets.
       assert.equal(new MonthlyPayslipGenerator(testCase.in).calculateIncomeTax(TaxBrackets.FY2013), testCase.out);
     });
   });
