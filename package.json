@@ -1,0 +1,11 @@
+{
+  "name": "myob-payslip",
+  "version": "1.0.0",
+  "description": "MYOB Payslip Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Heath Jones <hj1980@gmail.com>",
+  "license": "ISC"
+}
