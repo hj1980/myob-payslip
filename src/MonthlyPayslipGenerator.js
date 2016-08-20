@@ -1,3 +1,5 @@
+"use strict";
+
 class MonthlyPayslipGenerator {
 
   // Expect input in defined text format

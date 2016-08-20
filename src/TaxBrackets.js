@@ -1,3 +1,5 @@
+"use strict";
+
 const TaxBrackets = {
   FY2013: [{
 		rate: 0,
