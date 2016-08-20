@@ -1,6 +1,8 @@
 MYOB Coding Exercise - Monthly Payslip Generator
 ------------------------------------------------
 
+[![CircleCI](https://circleci.com/gh/hj1980/myob-payslip.svg?style=svg)](https://circleci.com/gh/hj1980/myob-payslip)
+
 #### Running:
 This will install Mocha and run the tests:
 ```
